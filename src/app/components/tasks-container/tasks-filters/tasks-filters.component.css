@@ -1,0 +1,33 @@
+.container {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--lighter-bg);
+}
+
+.filter {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--medium-text-color);
+  margin-left: 1rem;
+
+  position: relative;
+}
+
+.filter input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  opacity: 0;
+}
+
+.filter input:checked + label {
+  color: var(--primary-blue);
+}

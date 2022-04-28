@@ -1,1 +1,90 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Roboto:wght@300&family=Space+Mono:wght@700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-blue: hsl(220, 98%, 61%);
+  --check-bg: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+
+  font-size: 62.5%;
+}
+
+input,
+button {
+  outline: none;
+}
+
+button,
+input[type="checkbox"],
+input[type="radio"] {
+  cursor: pointer;
+
+  background-color: transparent;
+  border: none;
+}
+
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+input,
+button {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.8rem;
+}
+
+body {
+  --bg: hsl(0, 0%, 98%);
+  --lighter-bg: #fff;
+
+  --light-text-color: hsl(233, 11%, 84%);
+  --light-text-color-hover: hsl(233, 11%, 84%);
+
+  --medium-text-color: hsl(236, 9%, 61%);
+
+  --dark-text-color: hsl(235, 19%, 35%);
+  --dark-text-color-hover: hsl(235, 19%, 35%);
+
+  --bg-mobile-img: url(assets/bg-mobile-light.jpg);
+  --bg-desktop-img: url(assets/bg-desktop-light.jpg);
+
+  --theme-icon: url(assets/icon-moon.svg);
+}
+
+body.dark-theme {
+  --bg: hsl(235, 21%, 11%);
+  --lighter-bg: hsl(235, 24%, 19%);
+
+  --dark-text-color: hsl(234, 39%, 85%);
+  --dark-text-color-hover: hsl(236, 33%, 92%);
+
+  --medium-text-color: hsl(234, 11%, 52%);
+
+  --light-text-color: hsl(233, 14%, 35%);
+  --light-text-color-hover: hsl(237, 14%, 26%);
+
+  --bg-mobile-img: url(assets/bg-mobile-dark.jpg);
+  --bg-desktop-img: url(assets/bg-desktop-dark.jpg);
+
+  --theme-icon: url(assets/icon-sun.svg);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+
+  background-color: var(--bg);
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}

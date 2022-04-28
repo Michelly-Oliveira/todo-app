@@ -1,0 +1,27 @@
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  line-height: 3rem;
+  margin-bottom: 3rem;
+}
+
+header h1 {
+  color: #fff;
+  letter-spacing: 1.2rem;
+}
+
+header button {
+  background-image: var(--theme-icon);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  content: "";
+  display: block;
+
+  width: 3rem;
+  height: 3rem;
+}

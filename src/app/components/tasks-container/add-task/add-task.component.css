@@ -1,0 +1,34 @@
+.container {
+  width: 100%;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: var(--lighter-bg);
+}
+
+.container span {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1.5rem;
+  border-radius: 100%;
+
+  border: 1px solid var(--light-text-color);
+}
+
+.container input {
+  width: 90%;
+  border: none;
+
+  background-color: transparent;
+  color: var(--dark-text-color);
+}
+
+.container input::placeholder {
+  font-size: 1.3rem;
+  color: var(--medium-text-color);
+}
