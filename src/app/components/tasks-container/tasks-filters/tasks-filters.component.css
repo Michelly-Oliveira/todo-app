@@ -17,6 +17,11 @@
   margin-left: 1rem;
 
   position: relative;
+  transition: 0.2s ease-in-out all;
+}
+
+.filter:hover {
+  color: var(--dark-text-color);
 }
 
 .filter input {
@@ -30,4 +35,14 @@
 
 .filter input:checked + label {
   color: var(--primary-blue);
+}
+
+@media (min-width: 600px) {
+  .container {
+    width: fit-content;
+
+    position: absolute;
+    bottom: 0.2rem;
+    left: 14.3rem;
+  }
 }

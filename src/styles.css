@@ -8,7 +8,7 @@
 
 :root {
   --primary-blue: hsl(220, 98%, 61%);
-  --check-bg: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  --check-bg: linear-gradient(160deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
 
   font-size: 62.5%;
 }
@@ -46,12 +46,12 @@ body {
   --lighter-bg: #fff;
 
   --light-text-color: hsl(233, 11%, 84%);
-  --light-text-color-hover: hsl(233, 11%, 84%);
+  --light-text-color-hover: hsl(236, 33%, 92%);
 
   --medium-text-color: hsl(236, 9%, 61%);
 
   --dark-text-color: hsl(235, 19%, 35%);
-  --dark-text-color-hover: hsl(235, 19%, 35%);
+  --dark-text-color-hover: hsl(237, 14%, 26%);
 
   --bg-mobile-img: url(assets/bg-mobile-light.jpg);
   --bg-desktop-img: url(assets/bg-desktop-light.jpg);
