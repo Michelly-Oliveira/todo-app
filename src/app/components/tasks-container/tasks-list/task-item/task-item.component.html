@@ -1,0 +1,16 @@
+<li>
+  <div class="list-item">
+    <input type="checkbox" name="{{ task.id }}" id="{{ task.id }}" />
+
+    <span class="custom-checkbox">
+      <img src="../../../../assets/icon-check.svg" alt="checked task" />
+    </span>
+    <label for="{{ task.id }}">{{ task.title }}</label>
+
+    <button>
+      <img src="../../../../assets/icon-cross.svg" alt="delete task" />
+    </button>
+  </div>
+
+  <span class="list-item-border"></span>
+</li>

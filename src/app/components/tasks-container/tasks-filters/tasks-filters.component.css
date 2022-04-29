@@ -33,6 +33,10 @@
   opacity: 0;
 }
 
+.filter label {
+  text-transform: capitalize;
+}
+
 .filter input:checked + label {
   color: var(--primary-blue);
 }

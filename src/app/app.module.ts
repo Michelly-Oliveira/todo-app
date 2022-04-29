@@ -8,9 +8,10 @@ import { TasksContainerComponent } from './components/tasks-container/tasks-cont
 import { AddTaskComponent } from './components/tasks-container/add-task/add-task.component';
 import { TasksListComponent } from './components/tasks-container/tasks-list/tasks-list.component';
 import { TasksFiltersComponent } from './components/tasks-container/tasks-filters/tasks-filters.component';
+import { TaskItemComponent } from './components/tasks-container/tasks-list/task-item/task-item.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent, TasksContainerComponent, AddTaskComponent, TasksListComponent, TasksFiltersComponent],
+  declarations: [AppComponent, HeaderComponent, FooterComponent, TasksContainerComponent, AddTaskComponent, TasksListComponent, TasksFiltersComponent, TaskItemComponent],
   imports: [BrowserModule],
   providers: [],
   bootstrap: [AppComponent],
