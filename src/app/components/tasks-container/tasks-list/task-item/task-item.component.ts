@@ -10,10 +10,13 @@ import { TaskService } from 'src/app/services/task.service';
 })
 export class TaskItemComponent implements OnInit {
   @Input() task!: Task;
+  checked!: boolean;
 
   constructor(private taskService: TaskService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.checked = this.task.isDone;
+  }
 
   deleteTask(): void {
     this.taskService.deleteTask(this.task.id!);

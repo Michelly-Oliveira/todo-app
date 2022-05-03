@@ -9,7 +9,13 @@ import { Filter } from '../interfaces/Filter';
   providedIn: 'root',
 })
 export class TaskService {
-  private tasks: Array<Task> = [];
+  private tasks: Array<Task> = [
+    {
+      title: 'Testing',
+      isDone: false,
+      id: '1',
+    },
+  ];
   private filter: Filter = 'all';
   private subject = new Subject<any>();
 
@@ -19,6 +25,7 @@ export class TaskService {
     newTask.id = uuid();
     this.tasks.push(newTask);
 
+    console.log(this.tasks);
     this.sendProps();
   }
 
@@ -50,6 +57,7 @@ export class TaskService {
 
   changeFilter(newFilter: Filter): void {
     this.filter = newFilter;
+
     this.sendProps();
   }
 
@@ -72,7 +80,11 @@ export class TaskService {
     this.subject.next(filteredTasks);
   }
 
-  getTasks(): Observable<any> {
+  getTasks(): Array<Task> {
+    return this.tasks;
+  }
+
+  watchForChanges(): Observable<any> {
     return this.subject.asObservable();
   }
 }

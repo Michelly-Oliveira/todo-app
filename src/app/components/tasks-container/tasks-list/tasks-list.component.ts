@@ -15,9 +15,15 @@ export class TasksListComponent implements OnInit {
 
   constructor(private taskService: TaskService) {
     this.subscription = this.taskService
-      .getTasks()
+      .watchForChanges()
       .subscribe((value) => (this.tasks = value));
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.tasks = this.taskService.getTasks();
+  }
+
+  deleteCompletedTasks(): void {
+    this.taskService.deleteCompletedTask();
+  }
 }

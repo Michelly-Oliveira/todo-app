@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -11,8 +12,17 @@ import { TasksFiltersComponent } from './components/tasks-container/tasks-filter
 import { TaskItemComponent } from './components/tasks-container/tasks-list/task-item/task-item.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent, TasksContainerComponent, AddTaskComponent, TasksListComponent, TasksFiltersComponent, TaskItemComponent],
-  imports: [BrowserModule],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    TasksContainerComponent,
+    AddTaskComponent,
+    TasksListComponent,
+    TasksFiltersComponent,
+    TaskItemComponent,
+  ],
+  imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

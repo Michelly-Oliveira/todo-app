@@ -14,14 +14,14 @@
 .container span {
   width: 2rem;
   height: 2rem;
-  margin-right: 1.5rem;
+  margin-right: 1rem;
   border-radius: 100%;
 
   border: 1px solid var(--light-text-color);
 }
 
 .container input {
-  width: 90%;
+  width: 93.5%;
   border: none;
 
   background-color: transparent;

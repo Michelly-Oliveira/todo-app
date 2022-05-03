@@ -1,13 +1,19 @@
-<li>
+<li draggable="true">
   <div class="list-item">
-    <input type="checkbox" name="{{ task.id }}" id="{{ task.id }}" />
+    <input
+      type="checkbox"
+      name="{{ task.id }}"
+      id="{{ task.id }}"
+      (change)="updateTaskStatus()"
+      [checked]="checked"
+    />
 
     <span class="custom-checkbox">
       <img src="../../../../assets/icon-check.svg" alt="checked task" />
     </span>
     <label for="{{ task.id }}">{{ task.title }}</label>
 
-    <button>
+    <button (click)="deleteTask()">
       <img src="../../../../assets/icon-cross.svg" alt="delete task" />
     </button>
   </div>

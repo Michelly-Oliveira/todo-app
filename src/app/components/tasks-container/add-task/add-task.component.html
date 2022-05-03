@@ -1,5 +1,12 @@
-<form class="container">
+<form class="container" (ngSubmit)="onSubmit()">
   <span></span>
 
-  <input type="text" name="task" id="task" placeholder="Create a new todo..." />
+  <input
+    type="text"
+    name="task"
+    id="task"
+    placeholder="Create a new todo..."
+    [(ngModel)]="task"
+  />
+  <input type="submit" hidden />
 </form>
