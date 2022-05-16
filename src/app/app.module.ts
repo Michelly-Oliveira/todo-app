@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -22,7 +23,7 @@ import { TaskItemComponent } from './components/tasks-container/tasks-list/task-
     TasksFiltersComponent,
     TaskItemComponent,
   ],
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule, DragDropModule],
   providers: [],
   bootstrap: [AppComponent],
 })

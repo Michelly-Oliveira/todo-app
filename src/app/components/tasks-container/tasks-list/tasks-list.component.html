@@ -1,5 +1,9 @@
 <div class="container">
-  <ul class="content">
+  <ul
+    class="content"
+    cdkDropList
+    (cdkDropListDropped)="updateListOrder($event)"
+  >
     <app-task-item *ngFor="let task of tasks" [task]="task"></app-task-item>
   </ul>
 

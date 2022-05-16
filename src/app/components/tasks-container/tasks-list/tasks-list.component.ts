@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
+import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 
 import Task from 'src/app/interfaces/Task';
 import { TaskService } from 'src/app/services/task.service';
@@ -25,5 +26,9 @@ export class TasksListComponent implements OnInit {
 
   deleteCompletedTasks(): void {
     this.taskService.deleteCompletedTask();
+  }
+
+  updateListOrder(event: CdkDragDrop<string[]>): void {
+    moveItemInArray(this.tasks, event.previousIndex, event.currentIndex);
   }
 }
